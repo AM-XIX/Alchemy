@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Medieval Alchemy</h1>
+    <section class="whole">
+        <h3>Forge</h3>
+        <section class="forge">
+            <div id="set1" class="slot"></div>
+            <span>+</span>
+            <div id="set2" class="slot"></div>
+            <span>=</span>
+            <div id="result" class="slot"></div>
+        </section>
+        <br>
+        <button id="fusion">Fusion</button>
+        <br>
+        <p class="alrFound">This combination has already been found.</p>
+        <br>
+        <h3>Equipment</h3>
+        <section class="liste">
+            <div class="case">Metal</div>
+            <div class="case">Wood</div>
+            <div class="case">Rock</div>
+        </section>
+
+        <p class="alert">The slots are full. Hit reset to empty them.</p>
+        <br>
+        <button id="reset">Reset</button>
+        <h4>Discoveries : <span id="discoveries"></span> / 20</h4>
+        <h4>Show finished inventions <input id="check" type="checkbox" onclick="checkingTheBox()"></h4> 
+    </section>
+</body>
+
+</html>

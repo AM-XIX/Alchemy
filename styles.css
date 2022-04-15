@@ -1,0 +1,140 @@
+:root {
+    --yellowA:#F96D15;
+    --light:#f2f2f2;
+    --reflect:#dbf0f0;
+    --turquoiseA:#b6e0e2;
+    --blueA:#45969B;
+    --title:'Bungee', cursive;
+    --text:'Roboto Mono', monospace;
+}
+
+body {
+    background-color:var(--yellowA);
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:15vh;
+    font-family: var(--text);
+    margin:0;
+    font-size:1em;
+}
+
+h1 {
+    background-color:var(--blueA);
+    color:var(--turquoiseA);
+    font-family: var(--title);
+    font-size:2.3rem;
+    border-top:10px solid var(--turquoiseA);
+    border-left:10px solid var(--turquoiseA);
+    border-right:10px solid #285658;
+    border-bottom:10px solid #285658;
+    box-shadow:5px 5px 0px black;
+    padding:1vw 2vw;
+    animation:2s borders linear infinite alternate;
+}
+
+h3 {
+    margin:.5vw;
+    
+}
+
+@keyframes borders {
+    from {
+        border-top:10px solid var(--turquoiseA);
+        border-left:10px solid var(--turquoiseA);
+        color:var(--turquoiseA);
+    }
+    to {
+        border-top:10px solid white;
+        border-left:10px solid white;
+        color:white;
+    }
+}
+
+.whole {
+    text-align:center;
+    width:40vw;
+    padding:2vw 2vw 4vw 2vw;
+    background-color:var(--light);
+    border-top:10px solid white;
+    border-left:10px solid white;
+    border-right:10px solid #bfbfbf;
+    border-bottom:10px solid #bfbfbf;
+}
+
+.liste {
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.forge {
+    display:flex;
+    justify-content:center;
+}
+
+.case, .slot {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.case {
+    cursor:pointer;
+}
+
+.forge span {
+    align-self:center;
+    font-size:1.2em;
+}
+
+button {
+    cursor:pointer;
+    padding:.5% 2%;
+    color:var(--light);
+    font-size:1em;
+    transition:.2s ease-in-out;
+    /*box-shadow:4px 4px 0px var(--blueA);*/
+}
+
+#reset {
+    background-color:var(--blueA);
+    font-family: var(--title);
+    border-top:5px solid var(--turquoiseA);
+    border-left:5px solid var(--turquoiseA);
+    border-right:5px solid #285658;
+    border-bottom:5px solid #285658;
+}
+
+#fusion {
+    background-color:var(--yellowA);
+    font-family: var(--title);
+    border-top:5px solid #fcb183;
+    border-left:5px solid #fcb183;
+    border-right:5px solid #ae4504;
+    border-bottom:5px solid #ae4504;
+}
+
+button:hover {
+    letter-spacing:3px;
+}
+
+input {
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size:.8em;
+    }
+
+    .whole {
+      width:65vw;
+    }
+
+    h1 {
+        font-size:2rem;
+        padding:2vw 4vw;
+    }
+  }
